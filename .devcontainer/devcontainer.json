@@ -1,0 +1,27 @@
+{
+	"name": "Flux",
+	"dockerFile": "Dockerfile",
+	"forwardPorts": [
+		4321
+	],
+	"customizations": {
+		"toolchain": "stable",
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot-chat",
+				"GitHub.copilot",
+				"usernamehw.errorlens",
+				"astro-build.astro-vscode",
+				"serayuzgur.crates",
+				"tamasfe.even-better-toml",
+				"eamodio.gitlens",
+				"mohd-akram.vscode-html-format",
+				"technosophos.vscode-make",
+				"rust-lang.rust-analyzer",
+				"svelte.svelte-vscode",
+				"bradlc.vscode-tailwindcss",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
+}
