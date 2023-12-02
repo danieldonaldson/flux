@@ -38,8 +38,9 @@ RUN apt-get install -y zsh
 # Install Oh My Zsh
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# set ownership of repo to root
-# RUN chown -R root /workspaces/ubuntu/flux
+# Install cargo deps
+RUN apt-get install -y libssl-dev pkg-config
+RUN cargo install sqlx-cli
 
 # Set the default shell to zsh
 ENV SHELL=/bin/zsh

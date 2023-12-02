@@ -2,7 +2,8 @@
 	"name": "Flux",
 	"dockerFile": "Dockerfile",
 	"forwardPorts": [
-		4321
+		4321,
+		3001
 	],
 	"customizations": {
 		"toolchain": "stable",
